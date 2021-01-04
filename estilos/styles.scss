@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+$color-primary:hsl(185,
+75%,
+39%);
+$color-secondary:hsl(229,
+23%,
+23%);
+$color-text:hsl(227,
+10%,
+46%);
+$color-neutral:hsl(0,
+0%,
+59%);
+$font:'Kumbh Sans',
+sans-serif;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    background-color: $color-primary;
+    font-family: $font;
+}
+
+.card-container {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    z-index: 0;
+    .top-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 50vh;
+        width: 50vw;
+        background-image: url('/img/bg-pattern-top.svg');
+        background-position: bottom right;
+        background-repeat: no-repeat;
+    }
+    .bottom-img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 50vh;
+        width: 50vw;
+        background-image: url('/img/bg-pattern-bottom.svg');
+        background-position: top left;
+        background-repeat: no-repeat;
+    }
+    .card {
+        background-color: white;
+        position: relative;
+        margin: 5.5rem auto;
+        max-width: 375px;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(#000000, 0.2);
+        .ligth-text {
+            font-weight: 400;
+            color: $color-neutral;
+        }
+        .bold-title {
+            font-weight: bold;
+            color: $color-secondary;
+        }
+        .header-card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .pattern {
+                height: auto;
+                width: 100%;
+            }
+            .card-profile {
+                border-radius: 50%;
+                border: solid 4px white;
+                position: absolute;
+                top: 109px
+            }
+        }
+        .card-user {
+            font-family: $font;
+            margin: 5rem 0 0 0;
+            text-align: center;
+            .london {
+                padding: 1rem;
+                font-size: 16px;
+            }
+        }
+        .card-info {
+            margin: 0 auto;
+            padding: 1.5rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid rgba($color-neutral, 0.2);
+            .info {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                .small-title {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .footer {
+        text-align: center;
+        color: $color-secondary;
+        a {
+            color: rgb(47, 3, 119);
+            text-decoration: none;
+        }
+    }
+}

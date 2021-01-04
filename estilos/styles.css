@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  background-color: #19a2ae;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.card-container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  z-index: 0;
+}
+
+.card-container .top-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50vh;
+  width: 50vw;
+  background-image: url("/img/bg-pattern-top.svg");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.card-container .bottom-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 50vh;
+  width: 50vw;
+  background-image: url("/img/bg-pattern-bottom.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.card-container .card {
+  background-color: white;
+  position: relative;
+  margin: 5.5rem auto;
+  max-width: 375px;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-container .card .ligth-text {
+  font-weight: 400;
+  color: #969696;
+}
+
+.card-container .card .bold-title {
+  font-weight: bold;
+  color: #2d3248;
+}
+
+.card-container .card .header-card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-container .card .header-card .pattern {
+  height: auto;
+  width: 100%;
+}
+
+.card-container .card .header-card .card-profile {
+  border-radius: 50%;
+  border: solid 4px white;
+  position: absolute;
+  top: 109px;
+}
+
+.card-container .card .card-user {
+  font-family: "Kumbh Sans", sans-serif;
+  margin: 5rem 0 0 0;
+  text-align: center;
+}
+
+.card-container .card .card-user .london {
+  padding: 1rem;
+  font-size: 16px;
+}
+
+.card-container .card .card-info {
+  margin: 0 auto;
+  padding: 1.5rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid rgba(150, 150, 150, 0.2);
+}
+
+.card-container .card .card-info .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.card-container .card .card-info .info .small-title {
+  font-size: 12px;
+}
+
+.card-container .footer {
+  text-align: center;
+  color: #2d3248;
+}
+
+.card-container .footer a {
+  color: #2f0377;
+  text-decoration: none;
+}
+/*# sourceMappingURL=styles.css.map */
